@@ -1,0 +1,18 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* regole di debug */
+[class*="col-"] {
+  height: 100%;
+  line-height: 150px;
+  border: solid 1px #000;
+  text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+}
