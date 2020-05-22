@@ -1,19 +1,115 @@
 /* CSS Custom Responsive Wannabe 12Bool FW */
 
+/* Azzeramento Margin e Padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* regole di debug */
-[class*="col-"] {
-  height: 100%;
-  line-height: 150px;
-  border: solid 1px #000;
-  text-align: center;
+/* Loghi indicatori del formato schermo */
+.logoXS {
+  display: none;
+}
+.logoMD {
+  display: none;
+}
+.logoLG {
+  display: none;
 }
 
+/* Classe per il generico paragrafo */
 .paragraph {
   text-align: center;
+  padding: 20px;
+}
+
+/* Classe per il titolo dei paragrafi */
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: darkcyan;
+  margin: 10px 0;
+}
+
+/* Spaziatura immagini */
+img {
+  height: 20vh;
+  width: auto;
+  margin: 20px 0;
+}
+
+/* Sfondo a immagini dell'ultimo paragrafo */
+.why > img {
+  background-color: #428bca;
+  border-radius: 50%;
+}
+
+/* Media Query per Mobile */
+@media all and (max-width:768px) {
+
+  /* Logo indicatore size XS */
+  .logoXS {
+    display: block;
+    font-weight: 900;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    color: white;
+    z-index: 999;
+  }
+
+}
+
+/* Media Query per Tablet */
+@media all and (min-width:769px) and (max-width:992px) {
+
+/* Logo indicatore size MD */
+.logoMD {
+  display: block;
+  font-weight: 900;
+  line-height: 28px;
+  text-align: center;
+  font-size: 16px;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  border-radius: 50%;
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+  color: white;
+  z-index: 999;
+  }
+
+}
+
+/* Media Query per Smartphone */
+@media all and (min-width:993px) {
+
+  /* Logo indicatore size XS */
+  .logoLG {
+    display: block;
+    font-weight: 900;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    border-radius: 50%;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    color: white;
+    z-index: 999;
+    }
+
 }
